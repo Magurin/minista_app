@@ -3,6 +3,7 @@ import AuthorCard from '../AuthorCard/AuthorCard'
 import clsx from 'clsx'
 import Icon from '@/components/Icon'
 import { Image } from 'minista'
+import Button from '../Button'
 
 
 export default (props) => {
@@ -39,8 +40,11 @@ export default (props) => {
                 <ul className="hero-card__tags-list">
                     {tags.map(({ iconName, label }) => (
                         <li className="hero-card__tags-item">
-                            <Icon name={iconName}/>
-                            <span>{label}</span>
+                            <Icon 
+                                name={iconName}
+                                hasFill
+                            />
+                            <span className="hero-card__tags-label">{label}</span>
                         </li>
                     ))}
                 </ul>
@@ -50,6 +54,15 @@ export default (props) => {
                     className="hero-card__author"
                     {...author}
                 />
+                <Button 
+                    className="hero-card__button"
+                >
+                    <span>View Recipes</span>
+                <Icon  
+                    name="play"
+                    hasFill
+                />
+                </Button>
             </footer>
         </div>
         
@@ -58,6 +71,15 @@ export default (props) => {
             src={imgSrc}
             width={660}
             height={640}
+        />
+
+        <img
+            className="hero-card__badge"
+            src="/images/badge.svg"
+            alt="Handpicked recipies"
+            width={150}
+            height={150}
+            loading="lazy"
         />
     </div>
   )
