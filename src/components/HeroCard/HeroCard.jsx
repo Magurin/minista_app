@@ -64,6 +64,14 @@ export default (props) => {
                 />
                 </Button>
             </footer>
+            <img
+                className="hero-card__badge"
+                src="/images/badge.svg"
+                alt="Handpicked recipies"
+                width={150}
+                height={150}
+                loading="lazy"
+            />
         </div>
         
         <Image 
@@ -71,15 +79,6 @@ export default (props) => {
             src={imgSrc}
             width={660}
             height={640}
-        />
-
-        <img
-            className="hero-card__badge"
-            src="/images/badge.svg"
-            alt="Handpicked recipies"
-            width={150}
-            height={150}
-            loading="lazy"
         />
     </div>
   )
