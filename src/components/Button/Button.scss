@@ -6,7 +6,7 @@
   column-gap: 15px;
   height: 60px;
   padding-inline: 16px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.28px;
   color: var(--color-white);
@@ -17,5 +17,18 @@
   @include hover {
     color: var(--color-black);
     background-color: var(--color-white);
+  }
+
+  &--secondary {
+    color: var(--color-black);
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+
+    @include hover {
+      color: var(--color-white);
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
   }
 }

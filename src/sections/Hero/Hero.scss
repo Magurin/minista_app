@@ -1,7 +1,7 @@
 .hero {
   max-width: 1920px;
   margin-inline: auto;
-  padding: 50px var(--container-padding-x);
+  padding: 35px var(--container-padding-x) var(--section-padding-y);
 
   &__slider-item {
     max-width: var(--container-width);
