@@ -3,7 +3,7 @@
 
     display: grid;
     grid-template-columns: repeat(var(--gridColumns), 1fr);
-    gap: fluid(40, 20);
+    gap: 40px fluid(40, 20);
 
 
     @for $i from 1 through 12 {
@@ -12,5 +12,14 @@
         }
     }
 
+    &--6 {
+        @include laptop-s {
+            --gridColumns: 3;
+        }
+
+        @include mobile {
+            --gridColumns: 2;
+        }
+    }
 
 }
