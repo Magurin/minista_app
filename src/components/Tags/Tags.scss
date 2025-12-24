@@ -1,0 +1,25 @@
+.tags {
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        &__item {
+            display: inline-flex;
+            align-items: center;
+            column-gap: 10px;
+            padding: 8px 16px;
+            background-color: var(--color-gray-50);
+            border-radius: var(--border-radius);
+        }
+
+        &__label {
+            color: var(--color-gray-600)
+        }
+    }

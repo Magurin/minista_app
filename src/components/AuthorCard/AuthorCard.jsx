@@ -24,7 +24,7 @@ export default (props) => {
           </h3>
           <time 
               className="author-card__date"
-              datetime={date.dateTime}>
+              dateTime={date.dateTime}>
                   {date.label}
           </time>
         </div>

@@ -28,7 +28,7 @@ export default (props) => {
         >
             <ul className="soc1als__list">
                 {links.map(( {label, icon} ) => (
-                    <li className="soc1als__item">
+                    <li className="soc1als__item" key={label}>
                         <a 
                             href="/"
                             className="soc1als__link"
